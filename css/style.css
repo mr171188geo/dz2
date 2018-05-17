@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	transition: all .4s ease-in;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	margin: 0;
+	background-color: #3d3f45;
+	border: 10px solid #fff;
+	color: #fff;
+	font: 16px "Trebuchet MS", Trebuchet, Arial, sans-serif;
+	
+}
+header {
+	padding: 20px;
+}
+main, footer {
+	width: 70%;
+	margin: 0 auto;
+
+}
+header, footer {
+	padding: 20px;
+	text-align: center;
+	background: #4a4f56;
+	color: #eb7e7f;
+}
+main {
+	padding: 10px 0;
+}
+header h1 {
+	margin-top: 0;
+	padding: 20px;
+}
+.list {
+	list-style-type: none;
+	padding: 0;
+}
+.list li{
+	
+	background: #7a7593;
+	border-top: 2px solid #7a7593;
+	border-bottom: 2px solid #7a7593;
+}
+.list li:nth-child(odd){
+	background: #88839e;
+	border-top: 2px solid #88839e;
+	border-bottom: 2px solid #88839e;
+}
+.list li:focus,
+.list li:hover {
+border-color: #fff;
+}
+label {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	cursor: pointer;
+}	
+label:active{
+	background: #eb7e7f;
+	color: #eb7e7f;
+}
+input[type="checkbox"]:checked + span{
+text-decoration: line-through;
+}
+small:before{
+	content: "(";
+}
+small:after{
+	content: ")";
+}
+
+.circle {
+	width: 400px;
+	height: 400px;
+	outline: 1px solid #00ff00;
+	font-size: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.circle div{
+	display: inline-block;
+	width: 50%;
+	height: 50%;
+	outline: 1px solid #0000ff;
+}
+.circle div:nth-child(1){
+	background: #00ff00;
+}
+.circle div:nth-child(2){
+	background: #000ff0;
+}
+.circle div:nth-child(3){
+	background: #ff0000;
+}
+.circle div:nth-child(4)
+{
+	background: #00ff00;
+}
